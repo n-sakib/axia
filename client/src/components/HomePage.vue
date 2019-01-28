@@ -2,11 +2,11 @@
   <div class="hero">
     <div class="detail">
       <b-row>
-       <b-col>
+       <b-col cols="6">
          <h1>A&R For the Digital Age</h1>
          <p>Where new artists, songwriters, producers, and creators deviate from anomalies.</p>
        </b-col>
-       <b-col>3 of 3</b-col>
+       <b-col cols="6">3 of 3</b-col>
      </b-row>
     </div>
   </div>
@@ -27,8 +27,5 @@ export default {
 }
 .detail {
   padding-top: 33px;
-}
-.p {
-  text-align: left;
 }
 </style>

@@ -4,7 +4,7 @@
 
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-      <b-navbar-brand href="#"
+      <b-navbar-brand href="#">
         <img src="" height="66px" fluid alt="Axia" />
       </b-navbar-brand>
 
@@ -43,7 +43,6 @@
   </div>
 </template>
 <script>
-import BootstrapVue from '@/components/Header'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 

@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h1>{{ john }}</h1>
+
     <h2>Navigation</h2>
 
   </div>
@@ -11,7 +13,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Axia (0.0.1)'
+      msg: 'Welcome to Axia (0.0.1)',
+      john: 'yoooo'
     }
   }
 }
