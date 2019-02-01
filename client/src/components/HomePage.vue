@@ -1,17 +1,25 @@
 <template>
   <!-- Hero Homepage Section -->
   <div class="body">
-  <div class="hero">
-    <div class="detail">
-      <b-row>
-       <b-col cols="6">
-         <h1>A&R For the Digital Age</h1>
-         <p>Where new artists, songwriters, producers, and creators deviate from anomalies.</p>
-       </b-col>
-       <b-col cols="6">3 of 3</b-col>
-     </b-row>
+    <div class="hero">
+      <div class="detail">
+        <b-row>
+         <b-col cols="6">
+           <div class="herocontent">
+             <h1>A&R For the Digital Age</h1>
+             <p>Where new artists, songwriters, producers, and creators deviate from anomalies.</p>
+           </div>
+         </b-col>
+
+         <b-col cols="6">
+           <div class="herocontentimg">
+             <b-img src="https://picsum.photos/1024/400/?image=41" fluid alt="Responsive image" />
+             <b-img src="viaJs" fluid alt="hero" />
+           </div>
+         </b-col>
+       </b-row>
+      </div>
     </div>
-  </div>
 
   <!-- Collaborate Section -->
   <div class="collaborate">
@@ -28,19 +36,25 @@
 
   <!-- Pricing Section -->
   <div class="pricing">
-    <b-row>
     <div class="detail">
+      <b-row>
        <b-col cols="6">
          <h1>Pricing For Creative Minds</h1>
          <p>We have pricing options for every workflow. Subscriptions & per-project licenses.</p>
+         <p>Need Custom Music? Learn more about collaborating with our Artist.</p>
        </b-col>
+      <b-col cols="6">
+        <b-img src="https://picsum.photos/1024/400/?image=41" fluid alt="Responsive image" />
+      </b-col>
+    </b-row>
+    <br>
+    <b-row>
+       <b-col cols="6" md="8">cols="12" md="8"</b-col>
+       <b-col cols="6" md="12">cols="6" md="4"</b-col>
+   </b-row>
     </div>
-    <div class="detail-image">
-      <b-col cols="6">3 of 3</b-col>
-    </div>
-  </b-row>
-
   </div>
+
 </div>
 </template>
 
@@ -48,20 +62,27 @@
 export default {
   name: 'home',
   data () {
-    return {}
+    return {
+      heroImage: require('../assets/images/logo.png') // eslint-disable-line no-undef
+    }
   }
 }
 </script>
 <style>
 .hero {
   background-color: #fff;
-  height: 600px;
+  height: 500px;
 }
-.hero .detail {
-  margin-top: 50px;
+.hero .herocontent {
+  margin-top: 150px;
+  margin-left: 33px;
+  margin-right: 33px;
+
 }
-.hero detail {
-  margin-top: 10px;
+.hero .herocontentimg {
+  margin-top: 76px;
+  max-width: 475px;
+  text-align: left;
 }
 .collaborate {
   background-color: #F7F7F7;
