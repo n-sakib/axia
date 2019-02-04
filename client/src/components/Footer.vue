@@ -122,13 +122,12 @@ a {
   height: 100px;
   overflow: hidden;
   position: relative;
-  bottom: 0px;
+  margin-top: 322.5px;
   width: 100%;
 }
 li.bottom-nav-bar-links {
   display: inline-block;
-  position: absolute;
-  left: 50%;
+  position: relative;
   font-size: 12px;
 }
 .bg-info {
