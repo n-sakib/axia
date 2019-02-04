@@ -58,7 +58,7 @@ h1, h2 {
   font-weight: normal;
 }
 h3.customer-support-footer {
-  color:#9000fa;
+  color:#ff6600;
 }
 ul {
   list-style-type: none;
@@ -70,7 +70,7 @@ li {
   font-size: 12px;
 }
 li.customer-support-list {
-  color: #9000fa;
+  color: #ff6600;
 }
 a {
   color: #42b983;
@@ -79,7 +79,7 @@ a {
   height: 500px;
   background-color: #000;
   text-align: center;
-  color: #ff6600;
+  color: #9000fa;
 }
 .bg-info {
     background-color: #17a2b8 !important;
