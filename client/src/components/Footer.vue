@@ -2,11 +2,11 @@
   <div class="footer">
     <b-row>
     <b-col cols="3">
-      <h3>Product</h3>
+      <h3 class="customer-support-footer">Customer Support</h3>
       <ul>
-        <li>Licence</li>
-        <li>Custom Music</li>
-        <li>Music</li>
+        <li class="customer-support-list">+X-XXX-XXXX-XX</li>
+        <li class="customer-support-list">Start Chat</li>
+        <li class="customer-support-list">E-mail</li>
       </ul>
     </b-col>
     <b-col cols="3">
@@ -17,9 +17,11 @@
       </ul>
     </b-col>
     <b-col cols="3">
-      <h3>SUPPORT</h3>
+      <h3>PRODUCT</h3>
       <ul>
-        <li>About</li>
+        <li>Licence</li>
+        <li>Custom Music</li>
+        <li>Music</li>
       </ul>
     </b-col>
     <b-col cols="3">
@@ -55,6 +57,9 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
+h3.customer-support-footer {
+  color:#9000fa;
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -64,13 +69,17 @@ li {
   margin: 43px;
   font-size: 12px;
 }
+li.customer-support-list {
+  color: #9000fa;
+}
 a {
   color: #42b983;
 }
 .footer {
-  height: 256px;
+  height: 500px;
   background-color: #000;
   text-align: center;
+  color: #ff6600;
 }
 .bg-info {
     background-color: #17a2b8 !important;
