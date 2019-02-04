@@ -2,15 +2,18 @@
   <div class="footer">
     <b-row>
     <b-col cols="3">
-      <h3>AXIA</h3>
+      <h3>Product</h3>
       <ul>
-        <li>About</li>
+        <li>Licence</li>
+        <li>Custom Music</li>
+        <li>Music</li>
       </ul>
     </b-col>
     <b-col cols="3">
       <h3>ABOUT US</h3>
       <ul>
-        <li>About</li>
+        <li>Our Story</li>
+        <li>Axia Blog</li>
       </ul>
     </b-col>
     <b-col cols="3">
@@ -22,7 +25,10 @@
     <b-col cols="3">
       <h3>PLAYLIST</h3>
       <ul>
-        <li>About</li>
+        <li>What's New</li>
+        <li>Cinematic</li>
+        <li>Electronic</li>
+        <li>View All</li>
       </ul>
     </b-col>
 
@@ -54,15 +60,16 @@ ul {
   padding: 0;
 }
 li {
-  display: inline-block;
-  margin: 0 10px;
+  display: block;
+  margin: 43px;
+  font-size: 12px;
 }
 a {
   color: #42b983;
 }
 .footer {
-  height: 200px;
-  background-color: #fff;
+  height: 256px;
+  background-color: #000;
   text-align: center;
 }
 .bg-info {
