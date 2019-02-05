@@ -34,19 +34,30 @@
   </b-row>
     </b-container>
 
+
 <div class="bottom-nav-bar">
-        <ul>
-          <li class="facebook-icon"></li>
-          <li class="twitter-icon"></li>
-          <li class="instagram-icon"></li>
-          <li class="soundcloud-icon"></li>
-          <li class="youtube-icon"></li>
-          <li class="bottom-nav-bar-links">Privacy Policy</li>
-          <li class="bottom-nav-bar-links">Terms of Use</li>
-          <li class="bottom-nav-bar-links">Contact Us</li>
-        </ul>
-    </div>
-  </div>
+  <b-container fluid class="bv-example-row">   
+  <b-row>    
+  <b-col cols="6">
+    <ul>
+      <li class="social-media-icon-footer"><a href="https://placeholder.com"><img src="https://via.placeholder.com/33x33"></a></li>
+      <li class="social-media-icon-footer"><a href="https://placeholder.com"><img src="https://via.placeholder.com/33x33"></a></li>
+      <li class="social-media-icon-footer"><a href="https://placeholder.com"><img src="https://via.placeholder.com/33x33"></a></li>
+      <li class="social-media-icon-footer"><a href="https://placeholder.com"><img src="https://via.placeholder.com/33x33"></a></li>
+      <li class="social-media-icon-footer"><a href="https://placeholder.com"><img src="https://via.placeholder.com/33x33"></a></li>
+    </ul>
+  </b-col>
+  <b-col cols="6">
+    <ul>
+      <li class="bottom-nav-bar-links">Privacy Policy</li>
+      <li class="bottom-nav-bar-links">Terms of Use</li>
+      <li class="bottom-nav-bar-links">Contact Us</li>
+    </ul>
+  </b-col>
+  </b-row>
+  </b-container>
+</div>
+</div>
 </template>
 <script>
 import 'bootstrap/dist/css/bootstrap.css'
@@ -73,13 +84,13 @@ h3.customer-support-footer {
 }
 h3.about-us-footer {
   position: relative;
-    text-align: left;
-      margin-left: 33px;
+  text-align: left;
+  margin-left: 33px;
 }
 h3.product-footer {
   position: relative;
-    text-align: left;
-      margin-left: 33px;
+  text-align: left;
+  margin-left: 33px;
 }
 h3.playlist-footer {
   position: relative;
@@ -95,8 +106,8 @@ li {
   font-size: 12px;
   text-align: left;
   position: relative;
-    margin-left: 35px;
-    margin-bottom: 16px;
+  margin-left: 35px;
+  margin-bottom: 16px;
 }
 li.customer-support-list {
   color: #ff6600;
@@ -125,6 +136,11 @@ a {
   margin-top: 322.5px;
   width: 100%;
 }
+li.social-media-icon-footer {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+}
 li.bottom-nav-bar-links {
   display: inline-block;
   position: relative;
@@ -136,7 +152,7 @@ li.bottom-nav-bar-links {
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #000;
-    text-size:26px;
+    font-size:26px;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #000;
