@@ -79,26 +79,26 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-h3.customer-support-footer {
-  color:#ff6600;
-}
 h3.about-us-footer {
   position: relative;
   text-align: left;
   margin-left: 40px;
   margin-top: 125px;
+  color: #27282a;
 }
 h3.product-footer {
   position: relative;
   text-align: left;
   margin-left: 40px;
   margin-top: 125px;
+  color: #27282a;
 }
 h3.playlist-footer {
   position: relative;
   text-align: left;
   margin-left: 40px;
   margin-top: 125px;
+  color: #27282a;
 }
 ul {
   list-style-type: none;
@@ -111,30 +111,26 @@ li {
   position: relative;
   margin-left: 40.5px;
   margin-top: 16px;
-}
-li.customer-support-list {
-  color: #ff6600;
+  color: #27282a;
 }
 a {
   color: #42b983;
 }
 .footer {
   height: 500px;
-  background-color: #000;
+  background-color: #fff;
   text-align: center;
-  color: #9000fa;
+  color: #27282a;
 }
 .footer .footer-right {
-  background-color: #8f1717;
+  background-color: #f7f7f7;
   height: 500px;
   width: 100%;
   float: right;
   position: absolute;
 }
 .bottom-nav-bar {
-  background-color: #fb7f2b;
-  opacity: 0.4;
-  height: 100px;
+  background-color: rgba(251, 127, 43, .12); /* Use rgba to only affect the parent element */
   overflow: hidden;
   position: relative;
   margin-top: 189px;
@@ -144,13 +140,13 @@ li.social-media-icon-footer {
   display: inline-block;
   position: relative;
   font-size: 12px;
-  margin-top: 35px;
+  margin-top: 20px;
 }
 li.bottom-nav-bar-links {
   display: inline-block;
   position: relative;
   font-size: 12px;
-  margin-top: 45px;
+  margin-top: 30px;
   
 }
 .bg-info {
