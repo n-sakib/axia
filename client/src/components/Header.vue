@@ -1,11 +1,10 @@
 <template>
   <div class="header">
-    <b-navbar toggleable="md" type="dark" variant="info">
+    <b-navbar toggleable="md" type="dark" variant="info" sticky="true">
 
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
       <b-navbar-brand href="#/home">Axia
-        <img src="#/home" height="66px" fluid alt="Axia" />
       </b-navbar-brand>
 
       <b-collapse is-nav id="nav_collapse">
@@ -16,11 +15,11 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
 
-          <b-nav-item href="#/login">Get Discovered</b-nav-item>
+          <b-nav-item href="#/get-discovered">Get Discovered</b-nav-item>
           <b-nav-item href="#/songs">Browse</b-nav-item>
           <b-nav-item href="#/faq">FAQ</b-nav-item>
           <b-nav-item href="#/profile">Profile</b-nav-item>
-          <button class="btn btn-outline-success" type="button">Login</button>
+          <b-nav-item href="#/login">Login</b-nav-item>
         </b-navbar-nav>
 
       </b-collapse>
@@ -70,5 +69,12 @@ a {
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #000;
+}
+.navbar-dark {
+  color:#000;
+}
+.navbar-dark .navbar-brand {
+    color: #000;
+    font-size: 33px;
 }
 </style>
