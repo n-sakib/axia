@@ -63,7 +63,6 @@ export default {
   name: 'home',
   data () {
     return {
-      heroImage: require('../assets/images/logo.png') // eslint-disable-line no-undef
     }
   }
 }
