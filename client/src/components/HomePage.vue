@@ -1,9 +1,10 @@
 <template>
   <!-- Hero Homepage Section -->
   <div class="body">
+    <b-container class="homepage">
     <div class="hero">
       <div class="detail">
-        <b-row>
+          <b-row>
          <b-col cols="6">
            <div class="herocontent">
              <h1>A&R For the Digital Age</h1>
@@ -20,7 +21,7 @@
        </b-row>
       </div>
     </div>
-
+</b-container>
   <!-- Collaborate Section -->
   <div class="collaborate">
     <div class="detail">
@@ -34,6 +35,7 @@
     </div>
   </div>
 
+  <b-container class="homepage">
   <!-- Pricing Section -->
   <div class="pricing">
     <div class="detail">
@@ -44,17 +46,12 @@
          <p>Need Custom Music? Learn more about collaborating with our Artist.</p>
        </b-col>
       <b-col cols="6">
-        <b-img src="https://picsum.photos/1024/400/?image=41" fluid alt="Responsive image" />
+        <b-img src="@static/images/home/pricing.png" fluid alt="Responsive image" />
       </b-col>
     </b-row>
-    <br>
-    <b-row>
-       <b-col cols="6" md="8">cols="12" md="8"</b-col>
-       <b-col cols="6" md="12">cols="6" md="4"</b-col>
-   </b-row>
     </div>
   </div>
-
+</b-container>
 </div>
 </template>
 

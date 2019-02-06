@@ -6,6 +6,8 @@ import NewSong from '@/components/NewSong'
 import ProfilePage from '@/components/ProfilePage'
 import AboutPage from '@/components/AboutPage'
 import HomePage from '@/components/HomePage'
+import LoginPage from '@/components/LoginPage'
+import FAQ from '@/components/FAQ'
 
 Vue.use(Router)
 
@@ -40,6 +42,16 @@ export default new Router({
       path: '/about',
       name: 'About',
       component: AboutPage
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: LoginPage
+    },
+    {
+      path: '/faq',
+      name: 'FAQ',
+      component: FAQ
     }
   ]
 })
