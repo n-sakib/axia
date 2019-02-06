@@ -32,12 +32,10 @@
       </div>
     </b-col>
   </b-row>
-    </b-container>
-
-
+</b-container>
 <div class="bottom-nav-bar">
-  <b-container fluid class="bv-example-row">   
-  <b-row>    
+  <b-container fluid class="bv-example-row">
+  <b-row>
   <b-col cols="6">
     <ul>
       <li class="social-media-icon-footer"><a href="https://placeholder.com"><img src="https://via.placeholder.com/33x33"></a></li>
@@ -147,7 +145,7 @@ li.bottom-nav-bar-links {
   position: relative;
   font-size: 12px;
   margin-top: 30px;
-  
+
 }
 .bg-info {
     background-color: #17a2b8 !important;
