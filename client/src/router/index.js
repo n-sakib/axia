@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/HelloWorld'
 import SongsPage from '@/components/SongsPage'
 import NewSong from '@/components/NewSong'
 import ProfilePage from '@/components/ProfilePage'
@@ -15,11 +14,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
-    },
-    {
-      path: '/home',
       name: 'Home',
       component: HomePage
     },

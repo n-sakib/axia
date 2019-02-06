@@ -25,13 +25,15 @@
   <!-- Collaborate Section -->
   <div class="collaborate">
     <div class="detail">
+      <b-container class="homepage">
       <b-row>
         <b-col cols="6"></b-col>
-       <b-col cols="6">
+        <b-col cols="6">
          <h1>Collaborate with Industry Talent</h1>
          <p>We put the ability to select what artists we work with right back into the hands of the true A&R – the buying public. Convincing the public to spend their money and time supporting your art is true A&R.</p>
-       </b-col>
-     </b-row>
+        </b-col>
+      </b-row>
+      </b-container>
     </div>
   </div>
 
@@ -51,7 +53,7 @@
     </b-row>
     </div>
   </div>
-</b-container>
+  </b-container>
 </div>
 </template>
 
