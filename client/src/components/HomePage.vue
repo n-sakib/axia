@@ -7,9 +7,9 @@
           <b-row>
          <b-col cols="12">
            <div class="herocontent">
-             <h1>A&R For the Digital Age</h1>
-             <p>Where new artists, songwriters, producers, and creators deviate from anomalies.</p>
-             <button class="">Click Here</button>
+             <h1>Collaborate. License Your Music. Get Discovered.</h1>
+             <p>Welcome to a new, better music company.</p>
+             <button class="">Get Started</button>
            </div>
          </b-col>
        </b-row>
