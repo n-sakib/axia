@@ -85,17 +85,20 @@ h3.customer-support-footer {
 h3.about-us-footer {
   position: relative;
   text-align: left;
-  margin-left: 33px;
+  margin-left: 40px;
+  margin-top: 125px;
 }
 h3.product-footer {
   position: relative;
   text-align: left;
-  margin-left: 33px;
+  margin-left: 40px;
+  margin-top: 125px;
 }
 h3.playlist-footer {
   position: relative;
   text-align: left;
-  margin-left: 33px;
+  margin-left: 40px;
+  margin-top: 125px;
 }
 ul {
   list-style-type: none;
@@ -106,8 +109,8 @@ li {
   font-size: 12px;
   text-align: left;
   position: relative;
-  margin-left: 35px;
-  margin-bottom: 16px;
+  margin-left: 40.5px;
+  margin-top: 16px;
 }
 li.customer-support-list {
   color: #ff6600;
@@ -129,22 +132,26 @@ a {
   position: absolute;
 }
 .bottom-nav-bar {
-  background-color: #42b983;
+  background-color: #fb7f2b;
+  opacity: 0.4;
   height: 100px;
   overflow: hidden;
   position: relative;
-  margin-top: 322.5px;
+  margin-top: 189px;
   width: 100%;
 }
 li.social-media-icon-footer {
   display: inline-block;
   position: relative;
   font-size: 12px;
+  margin-top: 35px;
 }
 li.bottom-nav-bar-links {
   display: inline-block;
   position: relative;
   font-size: 12px;
+  margin-top: 45px;
+  
 }
 .bg-info {
     background-color: #17a2b8 !important;

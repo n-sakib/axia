@@ -10,7 +10,6 @@
              <p>Where new artists, songwriters, producers, and creators deviate from anomalies.</p>
            </div>
          </b-col>
-
          <b-col cols="6">
            <div class="herocontentimg">
              <b-img src="https://picsum.photos/1024/400/?image=41" fluid alt="Responsive image" />
@@ -20,7 +19,6 @@
        </b-row>
       </div>
     </div>
-
   <!-- Collaborate Section -->
   <div class="collaborate">
     <div class="detail">
@@ -33,7 +31,6 @@
      </b-row>
     </div>
   </div>
-
   <!-- Pricing Section -->
   <div class="pricing">
     <div class="detail">
@@ -54,7 +51,6 @@
    </b-row>
     </div>
   </div>
-
 </div>
 </template>
 
@@ -63,7 +59,6 @@ export default {
   name: 'home',
   data () {
     return {
-      heroImage: require('../assets/images/logo.png') // eslint-disable-line no-undef
     }
   }
 }
@@ -85,7 +80,7 @@ export default {
   text-align: left;
 }
 .collaborate {
-  background-color: #F7F7F7;
+  background-color: #000;
   height: 600px;
 }
 .pricing {
