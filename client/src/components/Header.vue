@@ -4,7 +4,7 @@
 
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-      <b-navbar-brand href="#/home">
+      <b-navbar-brand href="#/home">Axia
         <img src="#/home" height="66px" fluid alt="Axia" />
       </b-navbar-brand>
 
@@ -16,24 +16,11 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
 
-          <b-nav-item href="">Our Approach</b-nav-item>
           <b-nav-item href="#/login">Get Discovered</b-nav-item>
-          <b-nav-item-dropdown right>
-            <!-- Using button-content slot -->
-            <template slot="button-content">
-              <em>Songs</em>
-            </template>
-            <b-dropdown-item href="#">Add Songs</b-dropdown-item>
-            <b-dropdown-item href="#/songs">All Songs</b-dropdown-item>
-          </b-nav-item-dropdown>
-          <b-nav-item-dropdown right>
-            <!-- Using button-content slot -->
-            <template slot="button-content">
-              <em>Profile</em>
-            </template>
-            <b-dropdown-item href="#/profile">Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Signout</b-dropdown-item>
-          </b-nav-item-dropdown>
+          <b-nav-item href="#/songs">Browse</b-nav-item>
+          <b-nav-item href="#/faq">FAQ</b-nav-item>
+          <b-nav-item href="#/profile">Profile</b-nav-item>
+          <button class="btn btn-outline-success" type="button">Login</button>
         </b-navbar-nav>
 
       </b-collapse>
@@ -74,7 +61,7 @@ a {
   color: #42b983;
 }
 .bg-info {
-    background-color: #17a2b8 !important;
+    background-color: #fff !important;
     height: 99px;
 }
 .navbar-dark .navbar-nav .nav-link {

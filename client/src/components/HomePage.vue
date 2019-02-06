@@ -1,15 +1,17 @@
 <template>
   <!-- Hero Homepage Section -->
   <div class="body">
+    <b-container class="homepage">
     <div class="hero">
       <div class="detail">
-        <b-row>
+          <b-row>
          <b-col cols="6">
            <div class="herocontent">
              <h1>A&R For the Digital Age</h1>
              <p>Where new artists, songwriters, producers, and creators deviate from anomalies.</p>
            </div>
          </b-col>
+
          <b-col cols="6">
            <div class="herocontentimg">
              <b-img src="https://picsum.photos/1024/400/?image=41" fluid alt="Responsive image" />
@@ -19,18 +21,21 @@
        </b-row>
       </div>
     </div>
+</b-container>
   <!-- Collaborate Section -->
   <div class="collaborate">
     <div class="detail">
       <b-row>
         <b-col cols="6"></b-col>
-        <b-col cols="6">
-          <h1>Collaborate with Industry Talent</h1>
-          <p>We put the ability to select what artists we work with right back into the hands of the true A&R – the buying public. Convincing the public to spend their money and time supporting your art is true A&R.</p>
-        </b-col>
-      </b-row>
+       <b-col cols="6">
+         <h1>Collaborate with Industry Talent</h1>
+         <p>We put the ability to select what artists we work with right back into the hands of the true A&R – the buying public. Convincing the public to spend their money and time supporting your art is true A&R.</p>
+       </b-col>
+     </b-row>
     </div>
   </div>
+
+  <b-container class="homepage">
   <!-- Pricing Section -->
   <div class="pricing">
     <div class="detail">
@@ -41,29 +46,12 @@
          <p>Need Custom Music? Learn more about collaborating with our Artist.</p>
        </b-col>
       <b-col cols="6">
-        <b-img src="https://picsum.photos/1024/400/?image=41" fluid alt="Responsive image" />
+        <b-img src="@static/images/home/pricing.png" fluid alt="Responsive image" />
       </b-col>
     </b-row>
-    <br>
-    <b-row>
-       <b-col cols="6" md="8">cols="12" md="8"</b-col>
-       <b-col cols="6" md="12">cols="6" md="4"</b-col>
-   </b-row>
     </div>
   </div>
-  <!-- New Section Block -->
-  <div class="new-section">
-    <div class="detail">
-      <b-row>
-        <b-col cols="12">
-          <h1>Top & Trending Artists</h1>
-          <p>We use music as a vehicle to move the music industry forward</p>
-          <p>by building creatives into thriving businesses, crystalzing unforgettable</p>
-          <p>moments in time, and architecting legendary experineces for their audiences</p>
-        </b-col>
-      </b-row>
-    </div>
-  </div>
+</b-container>
 </div>
 </template>
 
@@ -93,15 +81,11 @@ export default {
   text-align: left;
 }
 .collaborate {
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   height: 600px;
 }
 .pricing {
   background-color: #fff;
-  height: 600px;
-}
-.new-section {
-  background-color: #000;
   height: 600px;
 }
 .detail {

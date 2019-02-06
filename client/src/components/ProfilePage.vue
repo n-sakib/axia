@@ -1,6 +1,10 @@
 <template>
   <div class="profile">
-    <h1>Your Profile</h1>
+    <b-container class="homepage">
+      <h1>Your Music Career is Waiting</h1>
+      <b-row>
+      <b-col cols="6">Left Side Profile</b-col>
+      <b-col cols="6">
       <div class="form">
         <div>
           <input type="text" name="username" placeholder="Username" v-model="title">
@@ -27,8 +31,11 @@
         <div>
           <button class="app_post_btn" @click="editProfile">Save</button>
         </div>
-      </div>
-  </div>
+        </div>
+      </b-col>
+    </b-row>
+  </b-container>
+</div>
 </template>
 
 <script>
@@ -73,5 +80,9 @@ export default {
   width: 100%;
   border: none;
   cursor: pointer;
+}
+.profile {
+  padding-top: 66px;
+  padding-bottom: 66px;
 }
 </style>
