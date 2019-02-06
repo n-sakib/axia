@@ -5,17 +5,11 @@
     <div class="hero">
       <div class="detail">
           <b-row>
-         <b-col cols="6">
+         <b-col cols="12">
            <div class="herocontent">
              <h1>A&R For the Digital Age</h1>
              <p>Where new artists, songwriters, producers, and creators deviate from anomalies.</p>
-           </div>
-         </b-col>
-
-         <b-col cols="6">
-           <div class="herocontentimg">
-             <b-img src="https://picsum.photos/1024/400/?image=41" fluid alt="Responsive image" />
-             <b-img src="viaJs" fluid alt="hero" />
+             <button class="">Click Here</button>
            </div>
          </b-col>
        </b-row>
