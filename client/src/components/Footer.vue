@@ -20,10 +20,11 @@
       </ul>
     </b-col>
     <b-col cols="2">
-      <h3 class="about-us-footer">ABOUT US</h3>
+      <h3 class="about-us-footer">COMPANY</h3>
       <ul>
         <li>Our Story</li>
         <li>Axia Blog</li>
+        <li><a href="#/faq">FAQ</a></li>
       </ul>
     </b-col>
     <b-col cols="6">

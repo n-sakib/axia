@@ -6,6 +6,7 @@ import ProfilePage from '@/components/ProfilePage'
 import AboutPage from '@/components/AboutPage'
 import HomePage from '@/components/HomePage'
 import LoginPage from '@/components/LoginPage'
+import GetDiscoveredPage from '@/components/GetDiscoveredPage'
 import FAQ from '@/components/FAQ'
 
 Vue.use(Router)
@@ -46,6 +47,11 @@ export default new Router({
       path: '/faq',
       name: 'FAQ',
       component: FAQ
+    },
+    {
+      path: '/get-discovered',
+      name: 'Get Discovered',
+      component: GetDiscoveredPage
     }
   ]
 })

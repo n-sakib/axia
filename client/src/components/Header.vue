@@ -16,10 +16,9 @@
         <b-navbar-nav class="ml-auto">
 
           <b-nav-item href="#/get-discovered">Get Discovered</b-nav-item>
-          <b-nav-item href="#/songs">Browse</b-nav-item>
-          <b-nav-item href="#/faq">FAQ</b-nav-item>
-          <b-nav-item href="#/profile">Profile</b-nav-item>
+          <b-nav-item href="#/songs">Explore</b-nav-item>
           <b-nav-item href="#/login">Login</b-nav-item>
+          <b-nav-item href="#/login">Sign Up</b-nav-item>
         </b-navbar-nav>
 
       </b-collapse>
