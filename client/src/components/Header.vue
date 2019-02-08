@@ -4,7 +4,7 @@
 
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-      <b-navbar-brand href="#/home">Axia
+      <b-navbar-brand href="#/">Axia
       </b-navbar-brand>
 
       <b-collapse is-nav id="nav_collapse">
@@ -65,7 +65,7 @@ a {
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #000;
-    text-size:26px;
+    font-size:26px;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #000;
