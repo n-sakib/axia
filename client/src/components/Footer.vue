@@ -14,8 +14,8 @@
     <b-col cols="2">
       <h3 class="product-footer">PRODUCT</h3>
       <ul>
-        <li>Licence</li>
-        <li>Custom Music</li>
+        <li><a href="/">Licence</a></li>
+        <li><a href="/">Custom Music</a></li>
         <li>Music</li>
       </ul>
     </b-col>
@@ -81,21 +81,21 @@ h3.about-us-footer {
   position: relative;
   text-align: left;
   margin-left: 40px;
-  margin-top: 125px;
+  margin-top: 33px;
   color: #27282a;
 }
 h3.product-footer {
   position: relative;
   text-align: left;
   margin-left: 40px;
-  margin-top: 125px;
+  margin-top: 33px;
   color: #27282a;
 }
 h3.playlist-footer {
   position: relative;
   text-align: left;
   margin-left: 40px;
-  margin-top: 125px;
+  margin-top: 33px;
   color: #27282a;
 }
 ul {
@@ -109,30 +109,33 @@ li {
   position: relative;
   margin-left: 40.5px;
   margin-top: 16px;
-  color: #27282a;
 }
 a {
-  color: #42b983;
+  color: #787;
+}
+li a {
+  color:#000;
 }
 .footer {
-  height: 500px;
+  height: 280px;
   background-color: #fff;
   text-align: center;
   color: #27282a;
 }
 .footer .footer-right {
   background-color: #f7f7f7;
-  height: 500px;
+  height: 280px;
   width: 100%;
   float: right;
   position: absolute;
 }
 .bottom-nav-bar {
-  background-color: rgba(251, 127, 43, .12); /* Use rgba to only affect the parent element */
+  background-color: rgba(251, 127, 43, .99); /* Use rgba to only affect the parent element */
   overflow: hidden;
   position: relative;
-  margin-top: 189px;
+  bottom: 0px;
   width: 100%;
+  margin-top: 33px;
 }
 li.social-media-icon-footer {
   display: inline-block;

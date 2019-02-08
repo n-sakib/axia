@@ -1,7 +1,6 @@
 <template>
   <!-- Hero Homepage Section -->
   <div class="body"> <!-- Begin FAQ -->
-  <b-container class="faqpage">
   <!-- Deleted the above <b-container class="faqpage"> that was here. Deleting allows for full page. Why? -->
      <div class="questions"> <!-- Begin Questions -->
        <b-container class="faqpage">
@@ -45,7 +44,7 @@
        </b-row>
       <b-row>
         <b-col cols="6">
-          <h3 class="faq-content-q">I Am a Member of the Press. Who May I Contact for Questions and Interviews?</h3>
+          <h3 class="faq-content-q">For Press Questions and Interviews who can I contact?</h3>
           <p class="faq-content-a">Media inquiries about AXIA Music Group should be directed t oour publicity department:</p>
           <p></p>
           <p class="faq-content-a">AXIA Music Group PR: pr@axiamusicgroup.com</p>
@@ -57,7 +56,6 @@
         </b-row>
      </b-container>
     </div> <!-- end questions -->
-    </b-container>
   </div> <!-- end FAQ -->
 </template>
 
@@ -71,16 +69,13 @@ export default {
 }
 </script>
 <style>
-.faqpage {
-  width: 100%;
-}
 .questions {
   background-color: #f7f7f7;
   height: 730px;
 }
 .faq-content {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .faq-content-q {
   position: relative;
@@ -88,7 +83,6 @@ export default {
   margin-left: 40px;
   margin-top: 0px;
   color: #27282a;
-
 }
 .faq-content-a{
   font-size: 12px;
@@ -97,7 +91,6 @@ export default {
   margin-left: 40.5px;
   margin-top: 16px;
   color: #27282a;
-
 }
 .hero .faq-content {
   margin-top: 150px;
