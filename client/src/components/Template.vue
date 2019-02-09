@@ -4,10 +4,8 @@
        <b-container class="get_discovered">
        <b-row>
         <b-col cols="12">
-          <div class="faq-content">
-            <h1>Get Discovered With Axia</h1>
+            <h1>What's New With Axia</h1>
             <p>Axia is in Motion.</p>
-          </div>
         </b-col>
       </b-row>
      </b-container>

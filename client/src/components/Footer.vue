@@ -118,14 +118,17 @@ li a {
   color:#000;
 }
 .footer {
-  height: 280px;
+  display: block;
+  overflow: auto;
   background-color: #fff;
   text-align: center;
   color: #27282a;
 }
 .footer .footer-right {
-  background-color: #f7f7f7;
-  height: 280px;
+  background-color: #fff;
+  display: block;
+  overflow: auto;
+  margin-top: 33px;
   width: 100%;
   float: right;
   position: absolute;
@@ -136,7 +139,6 @@ li a {
   position: relative;
   bottom: 0px;
   width: 100%;
-  margin-top: 33px;
 }
 li.social-media-icon-footer {
   display: inline-block;

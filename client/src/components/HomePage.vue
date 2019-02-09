@@ -4,19 +4,31 @@
     <b-container class="homepage">
     <div class="hero">
       <div class="detail">
-          <b-row>
+        <b-row>
          <b-col cols="12">
            <div class="herocontent">
-             <h1>Collaborate. License Your Music. Get Discovered.</h1>
-             <p>Welcome to a new, better music company.</p>
-             <button class="">Get Started</button>
-           </div>
+               <hooper ref="carousal" @slide="updateCarousel">
+                 <slide>
+                    <h1>Collaborate. License Your Music. Get Discovered.</h1>
+                    <p>Welcome to a new, better music company.</p>
+                    <button class="">Get Started</button>
+                </slide>
+                <slide>
+                   <h1>Collaborate. License Your Music. Get Discovered.</h1>
+                   <p>Welcome to a new, better music company.</p>
+                   <button class="">Get Started</button>
+               </slide>
+              </hooper>
+              <button @click.prevent="slidePrev">prev</button>
+               <input v-model="carousalData" type="number" min="0" max="3">
+               <button @click.prevent="slideNext">next</button>
+          </div>
          </b-col>
        </b-row>
       </div>
     </div>
-</b-container>
-  <!-- Landing Page 2 -->
+  </b-container>
+  <!-- Our Mission Section -->
   <div class="collaborate">
     <div class="detail">
       <b-container class="homepage">
@@ -25,13 +37,11 @@
           <h1>This is What We Do - Our Mission</h1>
         </b-col>
         <b-col cols="6">
-         <h1></h1>
          <p class="landing-copy">We are propelled by technology and fueled by passionate executives with proven expertise, keen instincts, and ademonstrated penchant for winning. At our core, we use music as a vehicle to move pop and youth culture forward by building artists into thriving businesses, crystallizing unforgettable moments in time, and architecting legendary experiences for their audiences.</p>
         </b-col>
       </b-row>
       <b-row>
         <b-col cols="12">
-            <br></br>
         </b-col>
       </b-row>
       <b-row>
@@ -71,11 +81,9 @@
     </div>
   </div>
   </b-container>
-
-
-  <b-container class="homepage">
   <!-- Landing Page 4 -->
-  <div class="landingpage-4">
+  <div class="dream">
+    <b-container class="homepage">
     <div class="detail">
       <b-row>
        <b-col cols="6">
@@ -87,7 +95,6 @@
         <p class="landing-copy">We strive for success and achieving greatness with those who are willing to sacrifice, just as we do, in order to realize their dreams. Is your dream worth it? Send us your music today.</p>
         <p></p>
         <p class="landing-copy">Come along on this journey with us. We promise to provide you with the resources you need to realize your passion. Dream big with us.</p>
-        <br></br>
       </b-col>
     </b-row>
     <b-row>
@@ -103,16 +110,48 @@
       </b-col>
     </b-row>
     </div>
-  </div>
   </b-container>
+  </div>
 </div>
 </template>
 
 <script>
+import { Hooper, Slide, Progress as HooperProgress, Navigation as HooperNavigation } from 'hooper'
+
 export default {
   name: 'home',
+  components: {
+    Hooper,
+    Slide,
+    HooperProgress,
+    HooperNavigation
+  },
   data () {
     return {
+      carousalData: 0,
+      hooperSettings: {
+        itemsToShow: 1,
+        centerMode: true,
+        progress: true,
+        playSpeed: 2000,
+        autoplay: true
+      }
+    }
+  },
+  watch: {
+    carousalData () {
+      this.$refs.carousal.slideTo(this.carousalData)
+    }
+  },
+  methods: {
+    slidePrev () {
+      this.$refs.carousal.slidePrev()
+    },
+    slideNext () {
+      this.$refs.carousal.slideNext()
+    },
+    updateCarousel (payload) {
+      this.myCarousalData = payload.currentSlide
     }
   }
 }
@@ -120,10 +159,10 @@ export default {
 <style>
 .hero {
   background-color: #fff;
-  height: 500px;
+  height: 400px;
 }
 .hero .herocontent {
-  margin-top: 150px;
+  margin-top: 66px;
   margin-left: 33px;
   margin-right: 33px;
 
@@ -135,12 +174,23 @@ export default {
 }
 .collaborate {
   background-color: #F7F7F7;
-  height: 700px;
   position: relative;
   text-align: left;
-  margin-left: 40px;
   margin-top: 0px;
+  display: block;
+  overflow: auto;
   color: #27282a;
+}
+.dream {
+  background-color: #F7F7F7;
+  position: relative;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  display: block;
+  overflow: auto;
+  color: #27282a;
+
 }
 p.landing-copy {
   font-size: 12px;
@@ -152,13 +202,18 @@ p.landing-copy {
 }
 .process {
   background-color: #fff;
-  height: 700px;
+  display: block;
+  overflow: auto;
 }
 .pricing {
-  background-color: #fff;
-  height: 600px;
+  background-color: #272727;
+  display: block;
+  overflow: auto;
 }
 .detail {
   padding-top: 33px;
+}
+.section {
+  background-color: #272727;
 }
 </style>
