@@ -13,11 +13,6 @@
                     <p>Welcome to a new, better music company.</p>
                     <button class="">Get Started</button>
                 </slide>
-                <slide>
-                   <h1>Collaborate. License Your Music. Get Discovered.</h1>
-                   <p>Welcome to a new, better music company.</p>
-                   <button class="">Get Started</button>
-               </slide>
               </hooper>
               <button @click.prevent="slidePrev">prev</button>
                <input v-model="carousalData" type="number" min="0" max="3">
@@ -34,7 +29,7 @@
       <b-container class="homepage">
       <b-row>
         <b-col cols="6">
-          <h1>This is What We Do - Our Mission</h1>
+          <h1>This is What We Do</h1>
         </b-col>
         <b-col cols="6">
          <p class="landing-copy">We are propelled by technology and fueled by passionate executives with proven expertise, keen instincts, and ademonstrated penchant for winning. At our core, we use music as a vehicle to move pop and youth culture forward by building artists into thriving businesses, crystallizing unforgettable moments in time, and architecting legendary experiences for their audiences.</p>
@@ -46,7 +41,7 @@
       </b-row>
       <b-row>
         <b-col cols="6">
-          <h1>This is Who We Are - AXIA in Motion</h1>
+          <h1>AXIA in Motion</h1>
         </b-col>
         <b-col cols="6">
          <h1></h1>
