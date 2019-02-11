@@ -1,31 +1,48 @@
 <template>
-  <div class="songs">
-    <h1>All Songs</h1>
-    <div v-if="songs.length > 0" class="table-wrap">
-      <div>
-        <router-link v-bind:to="{ name: 'NewSong' }" class="">Add Song</router-link>
-      </div>
-      <table>
-        <tr>
-          <td>Title</td>
-          <td width="550">Description</td>
-          <td width="100" align="center">Action</td>
-        </tr>
-        <!-- <tr v-bind:"song in songs">
-          <td>{{ song.title }}</td>
-          <td>{{ song.description }}</td>
-          <td align="center">
-            <router-link v-bind:to="{ name: 'EditSong', params: { id: song._id } }">Edit</router-link> |
-            <a href="#">Delete</a>
-          </td>
-        </tr> -->
-      </table>
-    </div>
-    <div v-else>
-      There are no songs available.. Be the first! <br /><br />
-      <router-link v-bind:to="{ name: 'NewSong' }" class="add_post_link">Add Song</router-link>
-    </div>
-  </div>
+  <div class="body"> <!-- Begin Body -->
+     <div class="content"> <!-- Begin Content -->
+       <b-container class="get_discovered">
+       <b-row>
+        <b-col cols="12">
+            <h1>Explore Axia's Catalog</h1>
+            <p>Browse through available songs perfect for any situation.</p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col cols="2">Filters</b-col>
+        <b-col cols="10">
+          <div class="songs">
+              <div v-if="songs.length > 0" class="table-wrap">
+                <div>
+                  <router-link v-bind:to="{ name: 'NewSong' }" class="">Add Song</router-link>
+                    </div>
+                      <table>
+                        <tr>
+                          <td>Title</td>
+                          <td width="550">Description</td>
+                          <td width="100" align="center">Action</td>
+                        </tr>
+                        <!-- <tr v-bind:"song in songs">
+                          <td>{{ song.title }}</td>
+                          <td>{{ song.description }}</td>
+                          <td align="center">
+                            <router-link v-bind:to="{ name: 'EditSong', params: { id: song._id } }">Edit</router-link> |
+                            <a href="#">Delete</a>
+                          </td>
+                        </tr> -->
+                      </table>
+                    </div>
+                  <div v-else>
+                    There are no songs available.. Be the first! <br /><br />
+                  <router-link v-bind:to="{ name: 'NewSong' }" class="add_post_link">Add Song</router-link>
+                </div>
+              </div>
+        </b-col>
+      </b-row>
+     </b-container>
+   </div> <!-- end content -->
+ </div> <!-- end body -->
+
 </template>
 
 <script>

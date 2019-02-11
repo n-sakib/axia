@@ -1,14 +1,25 @@
 <template>
-    <div>
-        <div class="login">
-          <div class="content">
-        <h2>Login</h2>
-        <form v-on:submit="login">
-            <input type="text" name="email" /><br>
-            <input type="password" name="password" /><br>
-            <input type="submit" value="LOGIN" />
-        </form>
-        </div>
+  <div>
+    <div class="login">
+      <b-container>
+        <div class="content">
+          <b-row>
+            <!-- LEFT -->
+            <b-col>
+            </b-col>
+            <!-- RIGHT -->
+            <b-col>
+              <h2>Welcome Back</h2>
+              <form v-on:submit="login">
+                <b-form-input v-model="text1" type="text" name="email" placeholder="Email"></b-form-input>
+                <b-form-input v-model="text1" type="text" name="password" placeholder="Password"></b-form-input>
+                <b-button>LOGIN</b-button>
+                <b-button>CREATE AN ACCOUNT</b-button>
+              </form>
+              </b-col>
+            </b-row>
+          </div>
+        </b-container>
       </div>
     </div>
 </template>
@@ -45,7 +56,7 @@ export default {
 
 <style>
 .login {
-  background-color: #000;
+  background-color: #f7f7f7;
   height: 500px;
 }
 .login .content {
