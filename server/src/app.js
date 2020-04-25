@@ -13,7 +13,8 @@ var Song = require("../models/song");
 //Setup MongoDb
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/songs');
+// mongoose.connect('mongodb://localhost:27017/songs');
+mongoose.connect('mongodb://jpacker1337:Chasingdr3ams.@ds125385.mlab.com:25385/axia_production');
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error"));
 db.once("open", function(callback){
